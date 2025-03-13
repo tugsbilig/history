@@ -13,7 +13,7 @@
         }
 
         body {
-            background-color: #1a1a1a;
+            background-color: #ffffff;
             color: #ffffff;
         }
 
@@ -28,7 +28,9 @@
 
         .logo {
             font-weight: bold;
+            font-style: italic;
             font-size: 24px;
+            font-family: "Times New Roman", Times, serif;
         }
 
         nav ul {
@@ -41,47 +43,67 @@
         }
 
         nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-        }
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #000; /* Хайрцагны өнгө */
+    padding: 10px 20px;
+    border-radius: 25px; /* Өнцөг дугуйруулах */
+}
 
         /* Search bar */
         .search-container {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
+    display: flex;
+    justify-content: center; /* Голд байрлуулах */
+    margin: 20px 0;
+}
 
-        .search-bar {
-            background-color: #222;
-            border-radius: 20px;
-            padding: 10px 20px;
-            width: 280px;
-            border: none;
-            color: white;
-        }
+.search-bar {
+    background-color: #222;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 60%; /* Урт болгох (хүсвэл 70% болгож болно) */
+    max-width: 600px; /* Хэт том болохоос сэргийлэх */
+    border: none;
+    color: white;
+    text-align: left; /* Текстийг зүүн талдаа үлдээх */
+}
 
         /* Hero section */
         .hero {
-            display: flex;
-            margin-bottom: 30px;
-        }
+    display: flex;
+    justify-content: center; /* Горилогчийн текстийг хөндлөнгөөс төвлөрүүлнэ */
+    align-items: center; /* Горилогчийн текстийг босоо чиглэлд төвлөрүүлнэ */
+    margin-bottom: 30px;
+}
 
-        .hero-text {
-            background-color: #222;
-            padding: 20px;
-            flex: 1;
-        }
+.hero-text {
+    background-color: #222;
+    padding: 20px;
+    flex: 0 0 auto;
+    height: 100px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%; 
+    margin-right: auto; /* Зүүн зах руу байрлуулах */
+    text-align: center;
+}
 
-        .date-picker {
-            background-color: #f2f2f2;
-            padding: 20px;
-            border-radius: 10px;
-            margin-left: 20px;
-            color: #333;
-            text-align: center;
-        }
+
+
+
+.date-picker {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 30px;
+}
+
 
         .date-picker input {
             padding: 8px;
@@ -92,17 +114,22 @@
 
         /* Featured content */
         .featured {
-            position: relative;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-        .featured img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
+.featured img {
+    width: 70%; /* Зургийг томруулах */
+    height: 300px;
+    object-fit: cover; /* Зургийн хэмжээг тохируулах */
+    position: relative;
+    left: 30%; /* Зургийг баруун захад шилжүүлэх */
+    border: 4px solid #000000;
+}gin-left: 20px; /* Зураг болон текстийн хооронд зай нэмэх */
+
+
 
         .year-tag {
             position: absolute;
@@ -116,16 +143,18 @@
         }
 
         .featured-text {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-        }
+    position: absolute;
+    bottom: 30px;
+    left: 450px; /* Зүүн доод буланд байрлуулах */
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5); /* Баганууд нь тодорхой харагдах */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000, 2px -2px 4px #000000, -2px 2px 4px #000000; /* Stroke effect */
+}
 
         /* Article grid */
         .section-title {
@@ -219,13 +248,7 @@
             text-decoration: none;
         }
 
-        /* Advertisement */
-        .advertisement {
-            background-color: #ff0000;
-            height: 100px;
-            margin: 20px auto;
-            max-width: 600px;
-        }
+        
     </style>
 </head>
 <body>
@@ -234,11 +257,11 @@
         <nav>
             <ul>
                 <li><a href="#">НҮҮР ХУУДАС</a></li>
-                <li><a href="#">ТҮҮХЭН ОН САРУУД</a></li>
-                <li><a href="#">ТҮҮХЭН ЗҮЙЛҮҮД</a></li>
-                <li><a href="#">БИДНИЙ ТУХАЙ</a></li>
-                <li><a href="#">ХАЙЛТЫН ХЭСЭГ</a></li>
-                <li><a href="#">БИДЭНТЭЙ ХОЛБОГДОХ</a></li>
+                <li><a href="#">ТҮҮХЭН ҮЙЛ ЯВДАЛ</a></li>
+                <li><a href="#">ТҮҮХЭН ХҮМҮҮС</a></li>
+                <li><a href="#">ШИЛДЭГ ТҮҮХҮҮД</a></li>
+                <li><a href="#">ШИЛДЭГ БИЧЭЭЧ</a></li>
+                <li><a href="#">ХУВИЙН БУЛАН</a></li>
             </ul>
         </nav>
     </header>
@@ -260,10 +283,11 @@
     <div class="advertisement"></div>
 
     <div class="featured">
-        <img src="/api/placeholder/800/400" alt="Монгол түүхэн зураг">
+        <img src="file:///C:/Users/User/Downloads/olloo_mn_1419812886_erh-choloo%20(1).webp" alt="Монгол түүхэн зураг">
         <div class="year-tag">1911 он</div>
         <div class="featured-text">
-            Монгол улс тусгаар тогтнолоо зарлав.
+            Монгол улс тусгаар 
+            тогтнолоо зарлав.
         </div>
     </div>
 
