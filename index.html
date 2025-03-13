@@ -1,0 +1,332 @@
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монгол улсын түүхэнд</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Search bar */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .search-bar {
+            background-color: #222;
+            border-radius: 20px;
+            padding: 10px 20px;
+            width: 280px;
+            border: none;
+            color: white;
+        }
+
+        /* Hero section */
+        .hero {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .hero-text {
+            background-color: #222;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .date-picker {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .date-picker input {
+            padding: 8px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Featured content */
+        .featured {
+            position: relative;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .featured img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .year-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .featured-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Article grid */
+        .section-title {
+            padding: 20px;
+            background-color: #333;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: #555;
+        }
+
+        .article-card {
+            background-color: #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            color: #333;
+        }
+
+        .article-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .article-card p {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .article-card .author {
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        /* Promo sections */
+        .promo-section {
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            background-color: #222;
+        }
+
+        .promo-title {
+            font-size: 24px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .promo-container {
+            display: flex;
+        }
+
+        .promo-image {
+            flex: 1;
+            background-color: #ddd;
+            min-height: 100px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .promo-text {
+            flex: 1;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 50px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        /* Advertisement */
+        .advertisement {
+            background-color: #ff0000;
+            height: 100px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ТҮҮХ</div>
+        <nav>
+            <ul>
+                <li><a href="#">НҮҮР ХУУДАС</a></li>
+                <li><a href="#">ТҮҮХЭН ОН САРУУД</a></li>
+                <li><a href="#">ТҮҮХЭН ЗҮЙЛҮҮД</a></li>
+                <li><a href="#">БИДНИЙ ТУХАЙ</a></li>
+                <li><a href="#">ХАЙЛТЫН ХЭСЭГ</a></li>
+                <li><a href="#">БИДЭНТЭЙ ХОЛБОГДОХ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Хайлт...">
+    </div>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Энэ өдөр Монгол улсын түүхэнд</h2>
+        </div>
+        <div class="date-picker">
+            <p>Огноо сонгох</p>
+            <input type="date" placeholder="Enter date">
+        </div>
+    </div>
+
+    <div class="advertisement"></div>
+
+    <div class="featured">
+        <img src="/api/placeholder/800/400" alt="Монгол түүхэн зураг">
+        <div class="year-tag">1911 он</div>
+        <div class="featured-text">
+            Монгол улс тусгаар тогтнолоо зарлав.
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h3>Мөн энэ өдөр</h3>
+    </div>
+
+    <div class="article-grid">
+        <div class="article-card">
+            <img src="/api/placeholder/120/100" alt="Түүхэн зураг">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod mauris eget libero tincidunt.</p>
+            <div class="author">Болд Дорж</div>
+        </div>
+        <div class="article-card">
+            <img src="/api/placeholder/120/100" alt="Түүхэн зураг">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod mauris eget libero tincidunt.</p>
+            <div class="author">Номин Хорол</div>
+        </div>
+        <div class="article-card">
+            <img src="/api/placeholder/120/100" alt="Түүхэн зураг">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod mauris eget libero tincidunt.</p>
+            <div class="author">Ариун Чимэд</div>
+        </div>
+        <div class="article-card">
+            <img src="/api/placeholder/120/100" alt="Түүхэн зураг">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod mauris eget libero tincidunt.</p>
+            <div class="author">Болд Дорж</div>
+        </div>
+        <div class="article-card">
+            <img src="/api/placeholder/120/100" alt="Түүхэн зураг">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod mauris eget libero tincidunt.</p>
+            <div class="author">Номин Хорол</div>
+        </div>
+        <div class="article-card">
+            <img src="/api/placeholder/120/100" alt="Түүхэн зураг">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod mauris eget libero tincidunt.</p>
+            <div class="author">Ариун Чимэд</div>
+        </div>
+    </div>
+
+    <div class="promo-section">
+        <h3 class="promo-title">7 ХОНОГИЙН ШИЛДЭГ ТҮҮХ БИЧЭЭЧ</h3>
+        <div class="promo-container">
+            <div class="promo-image"></div>
+        </div>
+    </div>
+
+    <div class="promo-section">
+        <div class="promo-container">
+            <div class="promo-image"></div>
+            <div class="promo-text">
+                <h3>ХАМГИЙН ИХ ҮНЭЛЭЛТТЭЙ ТҮҮХЭН ҮЙЛ ЯВДАЛ</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>БИДЭНТЭЙ ХОЛБОГДОХ ХҮСВЭЛ</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook-f">FB</i></a>
+            <a href="#"><i class="fa fa-instagram">IG</i></a>
+            <a href="#"><i class="fa fa-twitter">TW</i></a>
+        </div>
+    </footer>
+</body>
+</html>
